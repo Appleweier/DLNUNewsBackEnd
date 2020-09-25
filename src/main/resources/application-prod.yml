@@ -24,7 +24,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://39.106.16.234:3306/news?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai&useAffectedRows=true&useSSL=false
     username: news
-    password: Wuhan905a!
+    password: 
   #    hikari:
   #      maximum-pool-size: 10
   #      connection-timeout: 10000
