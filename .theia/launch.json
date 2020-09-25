@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - NewsApplication",
+            "request": "launch",
+            "mainClass": "edu.dlnu.news.NewsApplication",
+            "projectName": "news"
+        }
+    ]
+}

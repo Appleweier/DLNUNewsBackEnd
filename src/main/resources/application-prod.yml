@@ -1,0 +1,45 @@
+server:
+  port: 80
+spring:
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 5
+        min-idle: 0
+    timeout: 10000
+  jackson:
+    time-zone: GMT+8
+    date-format:  yyyy-MM-dd HH:mm:ss
+
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://39.106.16.234:3306/news?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai&useAffectedRows=true&useSSL=false
+    username: news
+    password: Wuhan905a!
+  #    hikari:
+  #      maximum-pool-size: 10
+  #      connection-timeout: 10000
+  #    type: com.zaxxer.hikari.HikariDataSource
+  thymeleaf:
+    cache: false
+    mode: HTML
+    encoding: utf-8
+    servlet:
+      content-type: text/html
+    prefix: classpath:/templates/
+#logging:
+#  file:
+#    path: ../logs/hello.log
+#  level: debug
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
